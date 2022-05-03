@@ -1,0 +1,51 @@
+body {
+  height: 200vh;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 32px;
+  border-radius: 50px;
+}
+
+nav ul {
+  background: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  gap: 20px;
+  color: black;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+nav li:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+nav li.active {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  background: linear-gradient(to right, black 50%, transparent 0);
+  background-size: 200% 100%;
+  background-position: right;
+  animation: makeItfadeIn 1s 0.5s forwards;
+}
+@keyframes makeItfadeIn {
+  100% {
+    background-position: left;
+  }
+}
+
+.link {
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 20px;
+}
