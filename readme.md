@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![Solutions ScreenShot](./css/screen-capture.webm)
+![Solutions ScreenShot](./css/screenshot.gif)
 
 ### Links
 
